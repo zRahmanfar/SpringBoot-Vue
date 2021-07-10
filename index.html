@@ -1,0 +1,73 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:v-bind="http://www.w3.org/1999/xhtml"
+      xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body style="background-color:#CACFD2 ">
+<div id="app">
+
+    <div id="txtWellcome" :style="txtwellcomeStyle" >
+        <h1>Night Together God So Great</h1>
+        <p>Light <strong>blessed</strong> green. Over fill whose saw face green
+            <em>rule</em> blessed signs. Creature forth let fish can&#39;t created you rule.
+            Saw male so, sea the divide, void unto fill there thing can&#39;t without fruitful you form heaven won&#39;t,
+            seed replenish firmament, tree fowl
+            <strong>wherein</strong> divided creature let night over whose.</p>
+    </div>
+
+    <div id="divBtn">
+        <button type="button" class="btn btn-secondary" @click="reforderPojectBtn">order project</button>
+        <button type="button" class="btn btn-secondary" @click="downloudeCv">downloude CV</button>
+    </div>
+
+
+
+    <div id="myPic"  >
+        <img :src="src" :alt="alt">
+        <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/>
+        <img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/>
+        <img src="https://img.icons8.com/fluent/48/000000/whatsapp.png"/>
+        <img src="https://img.icons8.com/fluent/48/000000/gmail-new.png"/>
+    </div>
+
+
+</div>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<script type="text/javascript">
+      const  app = Vue.createApp({
+
+          data() {
+              return {
+                  title: 'salam',
+                  boolean: true,
+                  number: 20,
+                  src: 'https://picsum.photos/250/300',
+                  src2: 'https://picsum.photos/252/300',
+                  srcx: 'https://picsum.photos/seed/picsum/300/300',
+                  alt: 'viu.js',
+                  alt: 'viu.jsx',
+                  href: 'https://picsum.photos/',
+                  txtwellcomeStyle:'margin: 50px ;position: absolute; width: 350px ;height: 350px"'
+              }},
+          methods: {
+              welcome() {
+                  let title = 'vue.js';
+                  return this.title
+              }}
+      });
+         app.mount('#app');
+</script>
+</body>
+</html>
